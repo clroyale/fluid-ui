@@ -1,5 +1,9 @@
-export { default as Button } from './components/Button/Button.svelte';
+//Primitives
+export { default as Button } from './primitives/Button/Button.svelte';
+export { default as Container } from './primitives/Container/Container.svelte';
+export { default as Text } from "./primitives/Text/Text.svelte";
+export { default as Input } from './primitives/Input/Input.svelte';
+
+//Components
 export { default as Accordion } from './components/Accordion/Accordion.svelte';
-export { default as Container } from './components/Container/Container.svelte';
-export { default as Input } from './components/Input/Input.svelte';
-export { default as Text } from "./components/Text/Text.svelte";
+

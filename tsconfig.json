@@ -12,6 +12,10 @@
 		"strict": true,
 		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
-		"noImplicitAny": true
+		"noImplicitAny": true,
+		"noEmitOnError": false,
+		"declaration": true,
+		"emitDeclarationOnly": true,
+		"allowImportingTsExtensions": true,
 	},
 }
