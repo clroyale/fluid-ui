@@ -1,6 +1,6 @@
 {
 	"name": "fluid-ui-svelte",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Unopinionated UI library for Svelte.",
 	"repository": {
 		"type": "git",
