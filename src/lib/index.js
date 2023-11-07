@@ -8,6 +8,7 @@ export { default as ColorInput } from './primitives/Input/ColorInput.svelte';
 export { default as DateTimeInput } from './primitives/Input/DateTimeInput.svelte';
 export { default as FileInput } from './primitives/Input/FileInput.svelte';
 export { default as TextInput } from './primitives/Input/TextInput.svelte';
+export { default as PasswordInput } from './primitives/Input/PasswordInput.svelte';
 export { default as ToggleInput } from './primitives/Input/ToggleInput.svelte';
 export { default as Label } from './primitives/Label/Label.svelte';
 export { default as Link } from "./primitives/Link/Link.svelte";

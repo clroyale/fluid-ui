@@ -7,6 +7,6 @@
 
 <input
 	bind:value
-	type="text"
+	type="password"
 	class={overrideClass ? inputClass : defaultClass + ' ' + inputClass}
 />

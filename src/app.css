@@ -8,7 +8,7 @@
 }
 
 .fluid-button {
-    @apply m-2 p-2 bg-blue rounded-md hover:bg-yellow
+    @apply m-2 p-2 bg-blue rounded-md hover:bg-yellow disabled:bg-opacity-25
 }
 
 .fluid-container {
@@ -73,4 +73,8 @@
 
 .fluid-avatar {
     @apply m-2 p-2 rounded-full w-full h-full aspect-square
+}
+
+.fluid-toggle {
+    @apply bg-gray after:bg-graylight after:border-graylight w-11 h-6 rounded-full after:absolute after:top-[2px] after:left-[2px] after:border after:rounded-full after:h-5 after:w-5 after:transition-all
 }

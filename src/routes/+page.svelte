@@ -12,6 +12,7 @@
 		Select,
 		FileInput,
 		TextInput,
+		PasswordInput,
 		ToggleInput,
 		Label,
 		Link,
@@ -27,38 +28,11 @@
 	let isOpen = false;
 </script>
 
-<Container containerClass="w-full" overrideClass={true}>
-	<Container containerType="div" containerClass="flex flex-col">
-		<AccordionWrapper>
-			<AccordionHeader
-				on:click={() => {
-					console.log(isOpen);
-					isOpen = !isOpen;
-				}}
-			>
-				<Text>aaa</Text>
-				<Text>aaa</Text>
-			</AccordionHeader>
-			<AccordionContent bind:isVisible={isOpen}
-				><Text
-					>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam eius repudiandae,
-					delectus officia asperiores, cumque commodi unde quo accusamus iste totam aliquam ipsam,
-					aperiam magni obcaecati accusantium pariatur dolore nulla? {isOpen}</Text
-				></AccordionContent
-			>
-		</AccordionWrapper>
-	</Container>
-	<Container overrideClass={true} />
-	<ModalContainer isVisible={isOpen} isOutsideClose={true}>
-		<Container containerClass="flex flex-col z-10">
-			<Container containerClass="flex flex-row justify-between">
-				<Text>sadfasdfasdf</Text>
-				<Button
-					on:click={() => {
-						isOpen = !isOpen;
-					}}>Close</Button
-				>
-			</Container>
-		</Container>
-	</ModalContainer>
+<Button />
+
+<Container containerClass="w-full bg-yellow" overrideClass={true}>
+	<ColorInput />
+	<TextInput />
+	<PasswordInput />
+	<ToggleInput />
 </Container>
