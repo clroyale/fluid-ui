@@ -71,10 +71,12 @@
     @apply m-2 p-2
 }
 
+/* Avatar expands itself so it is not bound to image file's size. Wrap around a container while using. */
 .fluid-avatar {
     @apply m-2 p-2 rounded-full w-full h-full aspect-square
 }
 
+/* Only change colors here. This defines the toggle component itself.*/
 .fluid-toggle {
     @apply bg-gray after:bg-graylight after:border-graylight w-11 h-6 rounded-full after:absolute after:top-[2px] after:left-[2px] after:border after:rounded-full after:h-5 after:w-5 after:transition-all
 }
