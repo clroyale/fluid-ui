@@ -1,19 +1,21 @@
 <script lang="ts">
-	export let id: string = '';
-	export let defaultClass: string = 'button';
-	export let buttonClass: string = 'button';
-	export let buttonType: 'submit' | 'button' | 'reset' = 'button';
+	export let buttonClass: string = '';
+	export let defaultClass: string = 'fluid-button';
 	export let overrideClass: boolean = false;
-	export let onClick = async function name(e: Event) {
-		console.log('Unimplemented Button');
-	};
+	export let buttonType: 'submit' | 'button' | 'reset' = 'button';
+	export let isDisabled: boolean = false;
+	export let buttonName: string = '';
+	export let buttonValue: string = '';
 </script>
 
 <button
-	on:click={(e) => onClick(e)}
+	on:click
 	type={buttonType}
 	class={overrideClass ? buttonClass : defaultClass + ' ' + buttonClass}
-	{id}
+	disabled={isDisabled}
+	name={buttonName}
+	value={buttonValue}
+	{...$$restProps}
 >
 	<slot />
 </button>
