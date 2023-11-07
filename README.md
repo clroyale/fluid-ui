@@ -1,4 +1,4 @@
-# This package is under development, you can check the version number. I need lots of refactoring for ARIA and performance optimizations. I would not recommend using it before I reach at least v.0.5.x.
+# This package is under development, you can check the version number. I need lots of refactoring to do for ARIA and performance optimizations. I would not recommend using it before I reach at least v.0.5.x.
 
 # Fluid UI for Svelte/SvelteKit
 
