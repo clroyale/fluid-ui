@@ -1,13 +1,9 @@
 <script lang="ts">
-	export let selectClass: string = '';
-	export let defaultClass: string = 'fluid-label';
+	export let tableClass: string = '';
+	export let defaultClass: string = 'fluid-table';
 	export let overrideClass: boolean = false;
-	export let isDisabled: boolean = false;
 </script>
 
-<select
-	class={overrideClass ? selectClass : defaultClass + ' ' + selectClass}
-	disabled={isDisabled}
->
+<table class={overrideClass ? tableClass : defaultClass + ' ' + tableClass}>
 	<slot />
-</select>
+</table>
