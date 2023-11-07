@@ -28,4 +28,6 @@ export { default as AccordionWrapper } from './components/Accordion/AccordionWra
 export { default as AccordionContent } from './components/Accordion/AccordionContent.svelte';
 export { default as AccordionHeader } from './components/Accordion/AccordionHeader.svelte';
 export { default as Avatar } from './components/Avatar/Avatar.svelte';
+export { default as ModalContainer } from './components/Modal/ModalContainer.svelte';
+
 
