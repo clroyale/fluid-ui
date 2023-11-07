@@ -11,12 +11,21 @@ export { default as TextInput } from './primitives/Input/TextInput.svelte';
 export { default as ToggleInput } from './primitives/Input/ToggleInput.svelte';
 export { default as Label } from './primitives/Label/Label.svelte';
 export { default as Link } from "./primitives/Link/Link.svelte";
-export { default as Select } from "./primitives/Select/Select.svelte";
 export { default as Option } from "./primitives/Select/Option.svelte";
+export { default as Select } from "./primitives/Select/Select.svelte";
 export { default as Table } from "./primitives/Table/Table.svelte";
+export { default as TableBody } from "./primitives/Table/TableBody.svelte";
+export { default as TableDataCell } from "./primitives/Table/TableDataCell.svelte";
+export { default as TableFoot } from "./primitives/Table/TableFoot.svelte";
+export { default as TableHead } from "./primitives/Table/TableHead.svelte";
+export { default as TableHeader } from "./primitives/Table/TableHeader.svelte";
+export { default as TableRow } from "./primitives/Table/TableRow.svelte";
 export { default as Text } from "./primitives/Text/Text.svelte";
 export { default as Video } from "./primitives/Video/Video.svelte";
 
 //Components
-// export { default as Accordion } from './components/Accordion/Accordion.svelte';
+export { default as AccordionWrapper } from './components/Accordion/AccordionWrapper.svelte';
+export { default as AccordionContent } from './components/Accordion/AccordionContent.svelte';
+export { default as AccordionHeader } from './components/Accordion/AccordionHeader.svelte';
+export { default as Avatar } from './components/Avatar/Avatar.svelte';
 

@@ -2,19 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
+.fluid-audio {
+    @apply m-2 p-2
+}
 
-.button {}
+.fluid-button {
+    @apply m-2 p-2 bg-blue rounded-md hover:bg-yellow
+}
 
-.container {}
+.fluid-container {
+    @apply m-2 p-2 bg-orange rounded-md
+}
 
-.text {}
+.fluid-form {
+    @apply m-2 p-2
+}
 
-.input {}
+.fluid-image {
+    @apply m-2 p-2
+}
 
-.video {}
+.fluid-color-input {
+    @apply m-2 p-2
+}
 
-.audio {}
+.fluid-date-time-input {
+    @apply m-2 p-2
+}
 
-.table {}
+.fluid-file-input {
+    @apply m-2 p-2
+}
 
-.form {}
+.fluid-color-input {
+    @apply m-2 p-2
+}
+
+.fluid-color-input {
+    @apply m-2 p-2
+}
+
+.fluid-label {
+    @apply m-2 p-2
+}
+
+.fluid-link {
+    @apply m-2 p-2
+}
+
+.fluid-select {
+    @apply m-2 p-2
+}
+
+.fluid-option {
+    @apply m-2 p-2
+}
+
+.fluid-table {
+    @apply m-2 p-2
+}
+
+.fluid-text {
+    @apply m-2 p-2
+}
+
+.fluid-video {
+    @apply m-2 p-2
+}
+
+.fluid-avatar {
+    @apply m-2 p-2 rounded-full w-full h-full aspect-square
+}

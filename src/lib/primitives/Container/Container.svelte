@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let containerClass: string = '';
-	export let defaultClass: string = 'container';
+	export let defaultClass: string = 'fluid-container';
 	export let overrideClass: boolean = false;
 	export let containerType: 'div' | 'section' | 'nav' | 'footer' = 'div';
 </script>

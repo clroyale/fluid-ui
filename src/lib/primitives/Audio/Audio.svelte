@@ -11,6 +11,7 @@
 </script>
 
 <audio
+	on:play
 	class={overrideClass ? audioClass : defaultClass + ' ' + audioClass}
 	{src}
 	autoplay={isAutoPlay}

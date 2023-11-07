@@ -9,6 +9,7 @@
 		Image,
 		ColorInput,
 		DateTimeInput,
+		Select,
 		FileInput,
 		TextInput,
 		ToggleInput,
@@ -16,72 +17,32 @@
 		Link,
 		Option,
 		Table,
-		Video
+		Video,
+		Avatar,
+		AccordionWrapper,
+		AccordionHeader,
+		AccordionContent
 	} from '$lib/index.js';
+	let isOpen = false;
 </script>
 
-<Container containerType="div" containerClass="bg-primaryColor">
-	<Container containerType="div" containerClass="flex flex-col">
-		<Audio
-			src={'https://download.samplelib.com/mp3/sample-3s.mp3'}
-			audioClass=""
-			isControls={true}
-			isLoop={false}
-		/>
-	</Container>
-
-	<Container containerType="div" containerClass="flex flex-col">
-		<Button buttonType="button" buttonClass="">
-			<Text textType="p" textClass="" text="Hey" />
-		</Button>
-	</Container>
-
-	<Container containerType="div" containerClass="flex flex-col" />
-
-	<Container containerType="div" containerClass="flex flex-col">
-		<Form />
-	</Container>
-
-	<Container containerType="div" containerClass="flex flex-col">
-		<Image />
-	</Container>
-
-	<Container containerType="div" containerClass="flex flex-col">
-		<ColorInput />
-	</Container>
-
-	<Container containerType="div" containerClass="flex flex-col">
-		<TextInput inputType="password" />
-	</Container>
-
-	<Container containerType="div" containerClass="flex flex-col">
-		<FileInput />
-	</Container>
-
-	<Container containerType="div" containerClass="flex flex-col">
-		<ToggleInput />
-	</Container>
-
-	<Container containerType="div" containerClass="flex flex-col">
-		<Label />
-	</Container>
-
-	<Container containerType="div" containerClass="flex flex-col">
-		<Link />
-	</Container>
-
-	<Container containerType="div" containerClass="flex flex-col">
-		<Option />
-	</Container>
-
-	<Container containerType="div" containerClass="flex flex-col">
-		<Table />
-	</Container>
-
-	<Container containerType="div" containerClass="flex flex-col">
-		<Text textType="p" textClass="" text="Hey" />
-	</Container>
-	<Container containerType="div" containerClass="flex flex-col">
-		<Video />
-	</Container>
+<Container containerType="div" containerClass="flex flex-col">
+	<AccordionWrapper>
+		<AccordionHeader
+			on:click={() => {
+				console.log(isOpen);
+				isOpen = !isOpen;
+			}}
+		>
+			<Text>aaa</Text>
+			<Text>aaa</Text>
+		</AccordionHeader>
+		<AccordionContent bind:isVisible={isOpen}
+			><Text
+				>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam eius repudiandae,
+				delectus officia asperiores, cumque commodi unde quo accusamus iste totam aliquam ipsam,
+				aperiam magni obcaecati accusantium pariatur dolore nulla? {isOpen}</Text
+			></AccordionContent
+		>
+	</AccordionWrapper>
 </Container>
