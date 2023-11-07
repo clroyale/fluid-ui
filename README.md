@@ -1,3 +1,5 @@
+# This package is under development, you can check the version number. I would not recommend using it before I reach at least v.0.5.x
+
 # Fluid UI for Svelte/SvelteKit
 
 Fluid UI is a UI library with minimal styling and layout. All of the primitives are basic abstractions of html elements and components are just building blocks for the actual component. You will need to build components yourself using those building blocks.
